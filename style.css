@@ -137,6 +137,14 @@ body {
 	margin-top: 50px;
 }
 
+.select-language {
+	font-size: 2rem;
+	line-height: 1.53;
+	text-align: center;
+	color: #35465d;
+}
+
+
 .title {
 	/*font-size: 3rem;*/
 	line-height: 1.67;
