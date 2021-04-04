@@ -46,9 +46,10 @@
 		<meta name="naver-site-verification" content="a53ee09d8b7d0d6749728b09e6d172915a7c869a" />
 	</head>
 
-	<body>
+	<body class="" style="" aria-hidden="false">
 		<nav class="p-3 container navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="https://disneyface.ga/">디즈니 Face Match 테스트</a>
+
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -94,8 +95,8 @@
 		<section class="container d-flex flex-column justify-content-center align-items-center">
 			<span class="select-language">Language</span>
 			<select onchange="changeLanguage(this)" class="custom-select col-8">
-				<option value="ko" lang="ko">한국어</option>
 				<option value="en" lang="en">English</option>
+				<option value="ko" lang="ko">한국어</option>
 				<option value="es" lang="es">español</option>
 				<option value="ja" lang="ja">日本語</option>
 				<option value="zh" lang="zh">中文</option>
@@ -105,29 +106,39 @@
 				<option value="th" lang="th">ไทย</option>
 			</select>
 		</section>
-		
-		
 		<script>
-        var ua = navigator.userAgent.toLowerCase();
-        function changeLanguage(lang) {
-            if( ( navigator.userAgent.indexOf('Mac OS') > 0 && navigator.userAgent.indexOf('Safari') <= 0 ) || ( ( navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('wv)') > 0 ) ) ){
-                if (ua.match('android') != null) {
-                    window.open("googlechrome://navigate?url=disneyface.ga/"+lang.value+"/index.html"); //android
-                } else if (ua.indexOf("iphone")>-1||ua.indexOf("ipad")>-1||ua.indexOf("ipod")>-1) { 
-                    window.location.href = "https://disneyface.ga/"+lang.value+"/index.html";
-                } else {
-                    window.location.href = "https://disneyface.ga/"+lang.value+"/index.html";
-                }
-            } else {
-                window.location.href = "https://disneyface.ga/"+lang.value+"/index.html";
-            }
-        }
-    </script>
-		
-		
-		
-		
+			var ua = navigator.userAgent.toLowerCase();
+			function changeLanguage(lang) {
+				if (
+					(navigator.userAgent.indexOf('Mac OS') > 0 &&
+						navigator.userAgent.indexOf('Safari') <= 0) ||
+					(navigator.userAgent.indexOf('Android') > 0 &&
+						navigator.userAgent.indexOf('wv)') > 0)
+				) {
+					if (ua.match('android') != null) {
+						window.open(
+							'googlechrome://navigate?url=disneyface.ga/' +
+								lang.value +
+								'/index.html'
+						); //android
+					} else if (
+						ua.indexOf('iphone') > -1 ||
+						ua.indexOf('ipad') > -1 ||
+						ua.indexOf('ipod') > -1
+					) {
+						window.location.href =
+							'https://disneyface.ga/' + lang.value + '/index.html';
+					} else {
+						window.location.href =
+							'https://disneyface.ga/' + lang.value + '/index.html';
+					}
+				} else {
+					window.location.href = 'https://disneyface.ga/' + lang.value + '/index.html';
+				}
+			}
+		</script>
 
+		
 		<section class="section">
 			<h1 class="title">Disney Character Face Match Test</h1>
 			<h2 class="subtitle1">겨울왕국,라푼젤,모아나,빅히어로,라야</h2>
