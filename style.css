@@ -172,26 +172,24 @@ body {
 		font-size: 10px;
 	}
 
-	.navbar-brand {
+.navbar-brand {
 		font-size: 2rem;
 	}
 }
+.nav-link {
+	font-size: 1.0rem;
+	line-height: 1.71;
+	text-align: center;
+	color: #35465d;
+}
 
 .youtube-link {
-	font-size: 1.5rem;
+	font-size: 1.0rem;
 	line-height: 1.71;
 	text-align: center;
-	color: #f73737;
-	text-decoration: underline;
+	color: #35465d;
 }
 
-.youtube-link: hover {
-	font-size: 1.5rem;
-	line-height: 1.71;
-	text-align: center;
-	color: #f73737;
-	text-decoration: underline;
-}
 
 .youtube-icon {
 	width: 30px;
